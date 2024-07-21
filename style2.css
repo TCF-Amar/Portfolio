@@ -1,0 +1,92 @@
+.box h1:nth-child(2) {
+  color: var(--text-color);
+}
+
+.optionBoxes {
+  background: var(--secondary);
+  transition: all ease 0.2s;
+}
+.optionBoxes:hover {
+  background: var(--text-color);
+  box-shadow: 0 0 10px var(--text-color);
+  color: var(--background);
+}
+.optionBoxes.active {
+  background: var(--text-color);
+  color: var(--background);
+}
+.experiences,
+.education {
+  height: 364px;
+  width: 100%;
+}
+
+.experiences::-webkit-scrollbar,
+.education::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+}
+
+.experiences:hover::-webkit-scrollbar-thumb,
+.education:hover::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--text-color);
+}
+
+.experienceBoxes,
+.educationBoxes {
+  background: var(--secondary);
+  transition: all ease 0.2s;
+  height: 150px;
+}
+.experienceBoxes span:nth-child(1),
+.educationBoxes span:nth-child(1) {
+  color: var(--text-color);
+}
+.kaseLiyaExperience {
+  font-size: 13px;
+}
+.skills {
+  background-color: var(--secondary);
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.skills:hover span i {
+  color: var(--text-color);
+}
+
+#aboutMeSection h1:nth-child(1),
+#ExperiencesSection h1:nth-child(1),
+#educationSection h1:nth-child(1),
+#skillsSection h1:nth-child(1),
+.why-hire-me {
+  color: var(--foreground);
+}
+
+@media screen and (min-width: 768px) {
+  .box:nth-child(1) {
+    width: 30%;
+  }
+  .box:nth-child(2) {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box:nth-child(1) {
+    width: 30%;
+  }
+  .box:nth-child(2) {
+    width: 70%;
+  }
+  .experiences {
+    text-wrap: nowrap;
+  }
+
+  .experiences span:nth-child(2) {
+    overflow: hidden;
+  }
+}

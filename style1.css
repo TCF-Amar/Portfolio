@@ -1,0 +1,86 @@
+main,
+.moreInfo {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.heroSection {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+}
+.box {
+  width: 50%;
+  /* border: 1px solid; */
+}
+.box h1 {
+  font-size: 2.2rem;
+}
+.myname {
+  color: var(--text-color);
+}
+.selfIntro {
+  font-size: 0.8rem;
+  width: 80%;
+}
+.social-icons {
+  font-size: 3rem;
+}
+.socialMediaLink {
+  display: flex;
+  justify-content: space-around;
+}
+.social-icons:hover {
+  color: var(--text-color);
+}
+.profile-photo-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.photo-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  border-radius: 50%;
+  transform: rotate();
+}
+
+.photo-box img {
+  width: 300px;
+  height: 300px;
+  /* border: inherit; */
+  border-radius: 50%;
+  /* box-shadow: 0 0 20px var(--text-color); */
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .heroSection {
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    width: 100%;
+  }
+  .box:nth-child(1) {
+    margin-top: 50px;
+  }
+  .selfIntro {
+    width: 100%;
+  }
+  .photo-box {
+    width: 200px;
+    height: auto;
+  }
+  .photo-box img {
+    width: 200px;
+    height: auto;
+    /* border: inherit; */
+    border-radius: 50%;
+  }
+}

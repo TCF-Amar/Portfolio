@@ -1,0 +1,20 @@
+.workTogether {
+  color: var(--text-color);
+}
+.workTogetherFrom {
+  background-color: #00000030;
+}
+input,
+select,
+textarea {
+  background-color: var(--background);
+}
+.msgSendBtn {
+  background-color: var(--text-color);
+  color: var(--background);
+  border-radius: 50px;
+}
+.boxes label{
+    background-color: #00000030;
+    color: var(--text-color);
+}

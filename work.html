@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Amarjeet Mistri's Portfolio Website">
+    <meta name="keywords" content="portfolio, web developer, Amarjeet Mistri">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav class="container main-container items-center ">
+
+            <span class="threeLine"><i class="fa-solid fa-bars"></i></span>
+
+            <h1 class="logo text-3xl items-center flex "><a href="./index.html">Amarjeet</a> <span class="dot">.</span>
+            </h1>
+
+            <ul class="navItems">
+                <i class="fa fa-x navItemCloseBtn"></i>
+
+
+                <li class=""><a href="./index.html">Home</a></li>
+                <li class=""><a href="./resume.html">Resume</a></li>
+                <li class="active"><a href="./work.html">Work</a></li>
+                <li class=""><a href="./contact.html">Contact</a></li>
+                <button id="hireMeBtnMobile" class="hireMeBtn md:hidden block py-2">Hire Me</button>
+            </ul>
+
+            <button id="hireMeBtn" class="hireMeBtn">Hire Me</button>
+
+
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+
+
+    <script src="./script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            alert('This Page Working Progresses');
+            window.location.href = './index.html';  
+        })
+    </script>
+
+
+</body>
+
+</html>
